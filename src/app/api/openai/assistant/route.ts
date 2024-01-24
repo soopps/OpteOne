@@ -1,8 +1,8 @@
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
 
-const openai = new OpenAI({ apiKey: "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" });
-const openaiModelId:any = "gpt-3.5-turbo-16k-0613" || null;
+const openai = new OpenAI();
+const openaiModelId:any = process.env.OPENAI_MODEL_ID || null;
 
 export async function POST(request: Request, context: any) {
     const { params } = context;
