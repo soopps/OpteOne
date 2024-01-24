@@ -10,7 +10,7 @@ export default function OpenAIAPIAssistantComponent() {
     const chatAssistantWithOpenAIAPI = async ( prompt: string ) => {
         try {
             setLoading(true);
-            const response = await fetch(`/api/openai/chat`, {
+            const response = await fetch(`/api/openai/assistant`, {
                 method      : "POST",
                 body        : JSON.stringify([
                     { role : "system", content : "You are a helpfull assitant." },
@@ -19,11 +19,10 @@ export default function OpenAIAPIAssistantComponent() {
             });
             if (response) {
                 const data = await response.json();
-                setData(JSON.parse(data));
+                setData(data);
             }
         } catch (error) {
-            console.error(error);
-            
+            console.error(error);            
         } finally {
             setLoading(false);
         }
@@ -58,12 +57,12 @@ export default function OpenAIAPIAssistantComponent() {
 
                 {loading ? ( <span>Please wait...</span> ) : (
                     <>
-                        {data.response ? (
+                        {data.content ? (
                             <>
                                 <ul className="space-y-3">
                                     <li className="mb-4">
                                         <strong>Assistant:</strong>
-                                        <div>{data.response}</div>
+                                        <div>{data.content}</div>
                                     </li>
                                 </ul>
                             </>
@@ -73,5 +72,5 @@ export default function OpenAIAPIAssistantComponent() {
 
             </div>
         </>
-    )
+    );
 }

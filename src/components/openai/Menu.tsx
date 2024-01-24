@@ -19,11 +19,6 @@ export default function OpenAIPagesMenu() {
                                 </Button>
                             </li>
                             <li>
-                                <Button variant="contained" size="small" color="inherit" href="/openai/functions">
-                                    Functions
-                                </Button>
-                            </li>
-                            <li>
                                 <Button variant="contained" size="small" color="inherit" href="/openai/image">
                                     Image
                                 </Button>
