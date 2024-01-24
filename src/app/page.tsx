@@ -19,7 +19,7 @@ export default function Home() {
                                 Your solution in a fast and reliable single WebPage
                             </h1>
                             <p className="mt-6 text-lg leading-8 text-gray-600">
-                                Revolutionize your website creation. Fast, reliable, and powered WordPress, Elementor and AI. Elevate your online presence effortlessly.
+                                Revolutionize your website creation. Fast, reliable, and powered by Next.js, WordPress, Elementor and AI. Elevate your online presence effortlessly.
                             </p>
                             <div className="mt-10 flex items-center justify-center gap-x-6">
                                 <Button variant="outlined" size="small">Get Started</Button>
