@@ -23,7 +23,6 @@ export default function Navigation() {
                             <li><Link href="/features" className="text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</Link></li>
                             <li><Link href="/openai" className="text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">OpenAI</Link></li>
                             <li><Link href="/contact-us" className="text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact Us</Link></li>
-                            <li><Link href="/blog" className="text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Blog</Link></li>
                         </ul>
                     </div>
                     <div className="flex-none lg:visible">
